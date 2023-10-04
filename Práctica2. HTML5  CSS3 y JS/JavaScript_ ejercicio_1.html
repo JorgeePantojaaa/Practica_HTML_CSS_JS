@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    #a
+    {
+        background-color: red;
+        height: 300px;
+        width: 300px;
+    }
+</style>
+<script>
+    function cambiaTexto()
+    {
+       let texto=document.getElementById("a");
+       let x = prompt("Introduce la nueva frase");
+       texto.innerHTML=x;
+    }
+    function cambiafondo()
+    {
+        let fondo=document.getElementById("a");
+        let n = prompt("dime un nuevo color de fondo: Amarillo/Verde/Azul/Rosa");
+        if (n=="Amarillo" || n=="amarillo")
+        {
+            fondo.style.backgroundColor="yellow";
+        }
+        else if (n=="Azul" || n=="azul")
+        {
+            fondo.style.backgroundColor="blue";
+        }
+        else if (n=="Verde" || n=="verde")
+        {
+            fondo.style.backgroundColor="green";
+        }
+        else if (n=="Rosa" || n=="rosa") 
+        {
+            fondo.style.backgroundColor="pink";
+        }
+        else 
+        {
+             alert("Elija entre los colores indicados")
+        }
+    }
+    function CTCletra() {
+                var cambiar = document.getElementById("a")
+                var color = prompt("Colores: Rojo/Azul/Verde/Marron")
+                var tipo = prompt("Tipos de letras: Arial/Calibri/TNR/Verdana")
+                if (color=="Rojo" || color=="rojo") {
+                    cambiar.style.color="red"
+                }
+                else if (color=="Azul" || color=="azul") {
+                    cambiar.style.color="blue"
+                }
+                else if (color=="Verde" || color=="verde") {
+                    cambiar.style.color="green"
+                }
+                else if (color=="Marron" || color=="marron") {
+                    cambiar.style.color="brown"
+                }
+                if (tipo=="Arial" || tipo=="arial") {
+                    cambiar.style.fontFamily="Arial"
+                }
+                else if (tipo=="Calibri" || tipo=="calibri") {
+                    cambiar.style.fontFamily="Calibri"
+                }
+                else if (tipo=="TNR" || tipo=="tnr") {
+                    cambia.style.fontFamily="Times new roman"
+                }
+                else if (tipo=="Verdana" || tipo=="verdana") {
+                    cambia.style.fontFamily="Verdana"
+                }
+                else {
+                    alert("Elija entre los colores y tipos de fuentes indicados")
+                }
+            }
+</script>
+<body>
+    <div name="div" id="a">Este es el contenido del div1</div>
+    <input type="button" name="Ctexto" value="Cambiar texto" onclick="cambiaTexto()"><br>
+    <input type="button" name="CCfondo" value="Cambiar color de fondo" onclick="cambiafondo()"><br>
+    <input type="button" name="CTCletra" value="Cambiar tipo y color de letra" onclick="CTCletra()">
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+
+</head>
+
+<style>
+
+    #div
+
+    {
+
+        background-color: gray;
+
+        width: 900px;
+
+        height: 200px;
+
+    }
+
+</style>
+
+<script>
+
+    function evaluacion()
+
+    {
+
+        var nota = 10
+
+        if (document.fc.R1[0].checked == false)
+
+        {
+
+            nota = nota - 2;
+
+        }
+
+        if (document.fc.R2[2].checked == false)
+
+        {
+
+            nota = nota - 2;
+
+        }
+
+        if (document.fc.R3[1].checked == false)
+
+        {
+
+            nota = nota - 2;
+
+        }
+
+        if (document.fc.R4[1].checked == false)
+
+        {
+
+            nota = nota - 2;
+
+        }
+
+        if (document.fc.R5[0].checked == false)
+
+        {
+
+            nota = nota - 2;
+
+        }
+
+        alert("Su nota final es " + nota + "/10");
+
+ 
+
+    }
+
+</script>
+
+<body>
+<form name="fc">
+
+    <div id="div" name="div1">En una red OSPF, ¿cuándo se requieren elecciones de DR y BDR?<br><bR>
+
+    Seleccione una respuesta:<br><br>
+
+    <input type="radio" name="R1">a) Cuando los routers están interconectados a través de una red Ethernet común.<br> 
+
+    <input type="radio" name="R1"> b) Cuando los dos vecinos adyacentes están en dos redes diferentes.<br>
+
+    <input type="radio" name="R1">c) Cuando todos los routers en un área OSPF no pueden formar adyacencias.<br>
+
+    <input type="radio" name="R1">d) Cuando los dos vecinos adyacentes están interconectados a través de un enlace punto a punto
+
+    </div><br><br>
+
+    <div id="div" name="div2">¿Qué contiene un área OSPF?<br><br>
+
+    Seleccione una respuesta:<br><br>
+
+    <input type="radio" name="R2">a) Routers que comparten el mismo ID de router.<br>
+
+    <input type="radio" name="R2">b) Routers cuyos árboles SPF son idénticos<br>
+
+    <input type="radio" name="R2">c) Routers que tienen la misma información de estado de enlace en sus LSDB.<br> 
+
+    <input type="radio" name="R2">d) Routers que comparten el mismo ID de proceso.
+
+    </div><br><br>
+
+    <div id="div" name="div3">¿Qué tipo de dirección es 64.101.198.197?<br><br>
+
+    Seleccione una respuesta:<br><br>
+
+    <input type="radio" name="R3">a) Privado<br>
+
+    <input type="radio" name="R3">b) Público<br> 
+
+    </div><br><br>
+
+    <div id="div" name="div4">¿Qué comando emitirá un ingeniero de red para verificar el saludo configurado y los intervalos del temporizador muerto en un enlace WAN punto a punto entre dos routers que ejecutan OSPFv2?<br><br>
+
+    Seleccione una respuesta:<br><br>
+
+    <input type="radio" name="R4">a) show ip ospf neighbor<br>
+
+    <input type="radio" name="R4">b) show ip ospf interface serial 0/0/0<br> 
+
+    <input type="radio" name="R4">c) show ip ospf interface fastethernet 0/1<br>
+
+    <input type="radio" name="R4">d) show ipv6 ospf interface serial 0/0/0
+
+    </div><br><br>
+
+    <div id="div" name="div5">Un administrador está configurando OSPF de área única en un router. Una de las redes que debe anunciarse es 128.107.0.0 255.255.252.0. ¿Qué máscara wildcard usaría el administrador en la declaración de red OSPF?<br><br>
+
+    Seleccione una respuesta:<br><br>
+
+    <input type="radio" name="R5">a) 0.0.3.255<br> 
+
+    <input type="radio" name="R5">b) 0.0.0.7<br>
+
+    <input type="radio" name="R5">c) 0.0.0.3<br>
+
+    <input type="radio" name="R5">d) 0.0.63.255
+
+    </div><br>
+
+    <input type="button" value="Enviar evaluacion" onclick="evaluacion()">
+
+</form>
+</body>
+
+</html>
